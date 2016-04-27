@@ -57,6 +57,7 @@
     }
 
     var dateTimePicker = function (element, options) {
+        options = $.extend(true, {}, $.fn.datetimepicker.defaults, options);
         var picker = {},
             date,
             viewDate,
